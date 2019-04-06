@@ -32,8 +32,8 @@ spark = SparkSession.builder.getOrCreate()
 # In[4]:
 
 
-rating_rdd = sc.textFile("file:///home/013731783/256_HW1/train.dat")
-test_rdd = sc.textFile("file:///home/013731783/256_HW1/test.dat")
+rating_rdd = sc.textFile("train.dat")
+test_rdd = sc.textFile("test.dat")
 
 
 # In[5]:
@@ -185,7 +185,7 @@ final
 # In[25]:
 
 
-f = open("outputFile_22ndMar_v6.txt","w")
+f = open("outputFile.txt","w")
 for f1 in final:
     f.write(str(f1)+"\n")
     
